@@ -37,27 +37,27 @@ class CreateMaxHeap{
 		}
 	}
 
-/*
-NOTE : Consider fact that the leaf nodes need not to be heapified as they already follow the heap property.
-So we have to apply the buildMaxHeap from the last non-leaf node
-Leaf node starts from the N/2 ..... N
-So the last non-leaf node = N/2 - 1 (Array starts with the zero)
+	/*
+	NOTE : Consider fact that the leaf nodes need not to be heapified as they already follow the heap property.
+	So we have to apply the buildMaxHeap from the last non-leaf node
+	Leaf node starts from the N/2 ..... N
+	So the last non-leaf node = N/2 - 1 (Array starts with the zero)
 
-	  0	   	  10
-	  		/     \
-    1	  30     50   2
-	      /   \   /
-	3   20  4 35 15     5
+		  0	   	  10
+				/     \
+	    1	  30     50   2
+		      /   \   /
+		3   20  4 35 15     5
 
-Here N=6 (array length)
-So first non leaf node = 6/2 -1 = 3-1 = 2
+	Here N=6 (array length)
+	So first non leaf node = 6/2 -1 = 3-1 = 2
 
-Now if current node is i = 1
-Then its 
-left = 2*i + 1 = 2*1 + 1 = 3
-Right = 2*i + 2 = 2*1 + 2 = 4 
+	Now if current node is i = 1
+	Then its 
+	left = 2*i + 1 = 2*1 + 1 = 3
+	Right = 2*i + 2 = 2*1 + 2 = 4 
 
-*/
+	*/
 	static void buildMaxHeap(int[] arr, int N){
 		int startInd = (N/2)-1;
 		for(int i=startInd; i>=0; i--){ // so we repeat the heapify function for all the non-leaf nodes
