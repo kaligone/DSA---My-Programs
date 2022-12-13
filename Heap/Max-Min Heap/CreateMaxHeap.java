@@ -60,7 +60,7 @@ Right = 2*i + 2 = 2*1 + 2 = 4
 */
 	static void buildMaxHeap(int[] arr, int N){
 		int startInd = (N/2)-1;
-		for(int i=startInd; i>=0; i--){ // so we repeat the heapify function for all the leaf nodes
+		for(int i=startInd; i>=0; i--){ // so we repeat the heapify function for all the non-leaf nodes
 			heapify(arr,N-1,i); //main function 
 		}
 	}
