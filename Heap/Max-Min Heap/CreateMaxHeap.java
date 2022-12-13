@@ -5,13 +5,11 @@ class CreateMaxHeap{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the size of the array :"); int n = sc.nextInt();
-
 		System.out.println("Enter the element of array one on each line :");
 		int[] a = new int[n];
 		for(int i=0; i<n; i++){
 			a[i] = sc.nextInt();
 		}
-
 		buildMaxHeap(a, a.length);
 		System.out.print("Max heap : ");
 		for (int x : a) {
