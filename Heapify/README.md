@@ -5,7 +5,7 @@ Consider one complete binary tree represented in array
 arr : 10 30 50 20 35 15
 Ind : 0  1  2  3  4  5
 
-	 0	   10
+	  0	   10
 	  	/     \
         1	30     50   2
 	      /   \   /
@@ -53,7 +53,7 @@ swap(arr,i,largest); swap(arr,1,4);
 	  	/     \
         1	35     50   2
 	      /   \   /
-        3   20  4 30 15     5
+	3   20  4 30 15     5
 
 
 heapify(arr, 5,4) return nothing since its leaf node
@@ -86,7 +86,7 @@ swap(arr,i,largest); swap(arr,0,2);
 	  	/     \
         1	30     10   2
 	      /   \   /
-        3   20  4 35 15     5
+	3   20  4 35 15     5
 
 
 heapify(arr,5, 2)
@@ -106,5 +106,5 @@ swap(arr,i,largest); swap(arr,2,);
 	  	/     \
         1	30     15   2
 	      /   \   /
-        3   20  4 35 10     5
+	3   20  4 35 10     5
 
