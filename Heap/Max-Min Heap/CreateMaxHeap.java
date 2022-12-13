@@ -43,11 +43,11 @@ class CreateMaxHeap{
 	Leaf node starts from the N/2 ..... N
 	So the last non-leaf node = N/2 - 1 (Array starts with the zero)
 
-		  0	   	  10
-				/     \
-	    1	  30     50   2
-		      /   \   /
-		3   20  4 35 15     5
+	  0	   10
+	  	/     \
+        1	30     50   2
+	      /   \   /
+	3   20  4 35 15     5
 
 	Here N=6 (array length)
 	So first non leaf node = 6/2 -1 = 3-1 = 2
